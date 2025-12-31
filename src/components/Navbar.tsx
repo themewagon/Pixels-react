@@ -16,15 +16,13 @@ export default function Navbar() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
             >
-                <a href="#!">
+                <a href="/">
                     <img className="h-8.5 w-auto" src="/pixels-reactjs/assets/logo.svg" alt="logo" width={130} height={34} />
                 </a>
 
                 <div className="hidden md:flex items-center gap-8 transition duration-500">
                     {navlinks.map((link: INavLink) => (
-                        <NavLink key={link.name} to={link.href} className="hover:text-pink-500 transition">
-                            {link.name}
-                        </NavLink>
+                        <a href={link.href} className="hover:text-pink-500 transition">{link.name}</a>
                     ))}
                 </div>
 
@@ -38,9 +36,9 @@ export default function Navbar() {
 
             <div className={`fixed inset-0 z-100 bg-black/40 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-400 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
                 {navlinks.map((link: INavLink) => (
-                    <NavLink key={link.name} to={link.href} onClick={() => setIsOpen(false)}>
+                    <a href={link.href} onClick={() => setIsOpen(false)}>
                         {link.name}
-                    </NavLink>
+                    </a>
                 ))}
                 <button onClick={() => setIsOpen(false)} className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-pink-600 hover:bg-pink-700 transition text-white rounded-md flex">
                     <XIcon />
