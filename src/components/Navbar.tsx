@@ -16,7 +16,7 @@ export default function Navbar() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 250, damping: 70, mass: 1 }}
             >
-                <a href="/">
+                <a href="#">
                     <img className="h-8.5 w-auto" src="/pixels-reactjs/assets/logo.svg" alt="logo" width={130} height={34} />
                 </a>
 
