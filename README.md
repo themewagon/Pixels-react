@@ -4,7 +4,7 @@
  - [Demo](https://themewagon.github.io/pixels-reactjs/)
 
 #### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/pixels-reactjs/)
+ - [Download from ThemeWagon](https://themewagon.com/themes/pixels-react/)
 
 ## Getting Started
 
@@ -30,12 +30,11 @@ bun dev
 
 ## Author 
 ```
-Design and code is completely written by PrebuiltUI and development team. 
+Design and code are completely written by PrebuiltUI and the development team. 
 ```
 
 ## License
 
- - Design and Code is Copyright &copy; [PrebuiltUI](https://prebuiltui.com/?utm_source=pixels)
- - Licensed cover under [MIT]
+ - Design and Code is Copyright &copy; [PrebuiltUI](https://prebuiltui.com/)
+ - Licensed under [MIT]
  - Distributed by [ThemeWagon](https://themewagon.com)
-
